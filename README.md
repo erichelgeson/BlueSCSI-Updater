@@ -33,3 +33,10 @@ This utility should run on:
 ## Other
 
 If you do not see your platform here you can open a pull request to add it, or just take a look at the commands the scripts run and run them manually.
+
+# Utilites
+
+STM32duino-bootloader - https://github.com/rogerclarkmelbourne/STM32duino-bootloader
+OpenOCD - https://openocd.org/
+dfu-util - https://dfu-util.sourceforge.io/
+Homebrew (Mac) - https://brew.sh/
