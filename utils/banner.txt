@@ -11,7 +11,7 @@
 Choose an option:
 
 [1] Upgrade via USB.
- - You must have BlueSCSI v1.1-000000-USB or greater already flashed.
+ - You must have BlueSCSI v1.1-20220404-USB or greater already flashed.
 [2] Prepare a blank BluePill or older BlueSCSI firmware for USB support.
  - You must have a STLink v2.
 
