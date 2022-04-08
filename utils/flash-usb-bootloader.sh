@@ -20,11 +20,11 @@ openocd \
     -c "set CPUTAPID 0" \
     -f interface/stlink.cfg \
     -f target/stm32f1x.cfg \
-    -c "transport select hla_swd" \
     -c "program ${BIN_FILE} 0x08000000 verify reset exit" \
 
 OK=$(grep 'Verified OK' output-log.txt -c)
 if [[ $OK -eq 1 ]]; then
+    echo
     echo "USB Bootloader loaded successfully! Ready to flash BlueSCSI firmware."
     echo "Move the BOOT1 Jumper back to position 0 and disconnect the BlueSCSI"
     echo
