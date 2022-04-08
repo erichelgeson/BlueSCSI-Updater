@@ -4,7 +4,8 @@ cd "$(dirname "$0")"
 # check if homebrew is installed
 # else use bins in folders
 BIN_FILE=${1:-generic_boot20_pc13.bin}
-echo "Flashing the $BIN_FILE"
+echo
+echo "Flashing the $BIN_FILE via STLink V2"
 echo "* Move BOOT1 to 1 (Jumper furthest from the RESET button on the BluePill)"
 echo "* Connect the ST-LinkV2 to your BlueSCSI and connect it to your computer."
 echo "Press return to continue..."
@@ -34,4 +35,5 @@ if [[ $OK -eq 1 ]]; then
 else
     echo "An error occured:"
     cat output-log.txt
+    echo "Please dial back in and try again."
 fi

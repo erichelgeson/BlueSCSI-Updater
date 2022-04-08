@@ -5,12 +5,13 @@ PLATFORM=$(uname)
 
 if [ $PLATFORM == "Darwin" ]; then
     if command -v brew &> /dev/null; then
-        if  ! command -v openocd &> /dev/null then
+        if  ! command -v openocd &> /dev/null; then
             echo "Found homebrew, installing openocd"
-            brew install openocd dfu-util
+            brew install openocd
         fi
-        if ! command -v dfu-util &> /dev/null;
+        if ! command -v dfu-util &> /dev/null; then
             echo "Found homebrew, installing dfu-util"
+            brew install  dfu-util
         fi
     else
         echo "Homebrew is currently required for MacOS to install the signed utilities we need to flash."
