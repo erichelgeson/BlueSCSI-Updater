@@ -1,0 +1,21 @@
+
+  ____  _             _____  _____  _____ _____ 
+ |  _ \| |           / ____|/ ____|/ ____|_   _|
+ | |_) | |_   _  ___| (___ | |    | (___   | |  
+ |  _ <| | | | |/ _ \\___ \| |     \___ \  | |  
+ | |_) | | |_| |  __/____) | |____ ____) |_| |_ 
+ |____/|_|\__,_|\___|_____/ \_____|_____/|_____|
+
+     Welcome to the BlueSCSI Firmware BBS!
+
+Choose an option:
+
+[1] Upgrade via USB.
+ - You must have BlueSCSI v1.1-000000-USB or greater already flashed.
+[2] Prepare a blank BluePill or older BlueSCSI firmware for USB support.
+ - You must have a STLink v2.
+
+[H] Help
+[P] Page Sysop
+[Q] Hang Up
+

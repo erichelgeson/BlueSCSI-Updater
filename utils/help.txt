@@ -1,0 +1,24 @@
+
+HELP!
+
+** Option [1] - Upgrade via USB
+
+Take a look at your LOG.txt from your BlueSCSI - if the version has "-USB" in it you can use this option to upgrade your firmware with just a USB cable!
+
+** Option [2] - Prepare a blank BluePill or older BlueSCSI firmware for USB support.
+
+If you have a non "-USB" firmware or a unflashed BluePill on your BlueSCSI - this option will allow you to flash the USB bootloader and BlueSCSI firmware.
+
+This option requires a STLink V2 programmer.
+
+https://github.com/erichelgeson/BlueSCSI/wiki/Flashing#using-stlink-v2
+
+** Stuck/Confused?
+
+Get help on Github or Discord:
+
+Discussions: https://github.com/erichelgeson/BlueSCSI
+
+Discord: https://discord.gg/GKcvtgU7P9
+
+Press return to continue...
