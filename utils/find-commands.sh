@@ -7,7 +7,9 @@ if [ $PLATFORM == "Darwin" ]; then
     if command -v brew &> /dev/null; then
         if  ! command -v openocd &> /dev/null; then
             echo "Found homebrew, installing openocd"
-            brew install openocd
+            # https://github.com/libusb/libusb/issues/928
+            # Remove --HEAD on next openocd release
+            brew install openocd --HEAD
         fi
         if ! command -v dfu-util &> /dev/null; then
             echo "Found homebrew, installing dfu-util"
