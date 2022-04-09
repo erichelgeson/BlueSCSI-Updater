@@ -26,7 +26,9 @@ OK=$(grep 'Verified OK' output-log.txt -c)
 if [[ $OK -eq 1 ]]; then
     echo
     echo "USB Bootloader loaded successfully! Ready to flash BlueSCSI firmware."
-    echo "Move the BOOT0 Jumper back to position 0 and disconnect the BlueSCSI"
+    echo
+    echo "* Move the BOOT0 Jumper back to position 0"
+    echo "* Disconnect the BlueSCSI from the STLink"
     echo
     echo "Ready to flash BlueSCSI firmware."
     echo "Press any key to continue..." 
