@@ -1,4 +1,4 @@
-# BlueSCSI-USB-Flasher
+# BlueSCSI Updater
 
 Allow you to upgrade an existing BlueSCSI that has a USB boot loader or load the USB boot loader on a BlueSCSI.
 
