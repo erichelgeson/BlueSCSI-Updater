@@ -2,39 +2,53 @@
 
 Allow you to upgrade an existing BlueSCSI that has a USB boot loader or load the USB boot loader on a BlueSCSI.
 
+To use, click on the green Code button above, and "Download Zip"
+
+It's current form is a set of scripts to help you update. We hope to make this entirly self contained and more fool proof in future updates.
+
+Please report issues, bugs, fixes here to make it better!
+
 ## Do I have a compatible BlueSCSI?
 
-Look at the LOG.txt on your BlueSCSI - if the version ends in `-USB` you can use this utility to flash newer firmwares.
+### Does your BlueSCSI have a USB Bootloader installed?
 
-If it does not you can still use this utility to laod the bootloader but it will require a STLink-V2 to do the inital load.
+* You're BlueSCSI was shipped on or after 2022-04-11.
+* The LED flashes quickly at startup.
+* The LOG.txt VERSION ends in `-USB`
+
+If yours does you can flash updates via Option #1.
+
+If your BlueSCSI does not have a USB bootloader you can install it with an STLink-V2 following option #2.
 
 # Usage
 
 ## Mac
 
+Currently homebrew (https://brew.sh) is required due to having the utilities needed notarized. In the future we hope to remove this depencacy. 
+
 Double click `flash-mac.command`
 
 ## Win
 
+Install the Maple Drivers in `utils/maple-usb-drivers-win.7z` - run `install_drivers.bat`
+**NOTE**: You will likely need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to libusb
+if you see the error `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
+
 Double click `flash-win.bat`
 
-# Compatible platforms.
+## FAQ
 
-This utility should run on:
+### Q: Getting `Error sending completion packet (LIBUSB_ERROR_IO)`
 
-* Macintosh x86_64
-* Macintosh M1 (with homebrew) 
+A: On some machines you may get this error, but it can be ignored. The flash was successful.
 
-## Coming soon
+### Q: My BlueSCSI does not have a USB Bootloader - can I update it?
 
-* Windows x86_64
-* Linux x86_64
+A: Yes, but you will need an STLink for the initial flashing of the bootloader, after that you can flash via USB.
 
-## Other
+Follow option #2 to install the USB bootloader and then the BlueSCSI firmware.
 
-If you do not see your platform here you can open a pull request to add it, or just take a look at the commands the scripts run and run them manually.
-
-# Utilites
+# Utilites Used
 
 STM32duino-bootloader - https://github.com/rogerclarkmelbourne/STM32duino-bootloader
 OpenOCD - https://openocd.org/
