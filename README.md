@@ -31,6 +31,7 @@ Double click `flash-mac.command`
 ## Win
 
 Install the Maple Drivers in `utils/maple-usb-drivers-win.7z` - run `install_drivers.bat`
+
 **NOTE**: You will likely need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to libusb
 if you see the error `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
 
@@ -48,9 +49,13 @@ A: Yes, but you will need an STLink for the initial flashing of the bootloader, 
 
 Follow option #2 to install the USB bootloader and then the BlueSCSI firmware.
 
+### Q: Getting `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
+
+A: You will need to tell windows to use the correct driver by using Zadig and switching the Maple device to libusb. 
+
 # Utilites Used
 
-STM32duino-bootloader - https://github.com/rogerclarkmelbourne/STM32duino-bootloader
-OpenOCD - https://openocd.org/
-dfu-util - https://dfu-util.sourceforge.io/
-Homebrew (Mac) - https://brew.sh/
+* STM32duino-bootloader - https://github.com/rogerclarkmelbourne/STM32duino-bootloader
+* OpenOCD - https://openocd.org/
+* dfu-util - https://dfu-util.sourceforge.io/
+* Homebrew (Mac) - https://brew.sh/
