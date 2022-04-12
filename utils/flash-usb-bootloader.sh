@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 # check if homebrew is installed
 # else use bins in folders
 BIN_FILE=${1:-generic_boot20_pc13.bin}
+./find-commands.sh
 echo
 echo "Flashing the $BIN_FILE via STLink V2"
 echo "* Move BOOT0 to 1 (Jumper furthest from the RESET button on the BluePill)"
