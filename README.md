@@ -32,8 +32,7 @@ Double click `flash-mac.command`
 
 Install the Maple Drivers in `utils/maple-usb-drivers-win.7z` - run `install_drivers.bat`
 
-**NOTE**: You will likely need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to libusb
-if you see the error `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
+**NOTE**: You will likely need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to `libusb-win32` if you see the error `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
 
 Double click `flash-win.bat`
 
