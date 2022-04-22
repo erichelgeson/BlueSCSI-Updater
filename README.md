@@ -19,11 +19,11 @@ Please report issues, bugs, fixes here to make it better!
 
 #### Yes to any above?
 
-Great! You can flash updates via **Option #1**.
+Great! You can flash updates via **Option #1** in the script.
 
 #### No?
 
-If your BlueSCSI does **not** have a USB bootloader you can install it with with this script with an STLink via Option #2
+If your BlueSCSI does **not** have a USB bootloader you can install it with with this script with an STLink via **Option #2** in the script
 
 **NOTE:** It is not trivial to setup STLink and flash the bootloader for the first time as the tooling is inteded for developrs. We try to make it as easy as possible but you may run into issues. Please read everything carefully if you choose this route. 
 
