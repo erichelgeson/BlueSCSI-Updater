@@ -2,13 +2,14 @@
 
 Allow you to upgrade an existing BlueSCSI that has a USB boot loader or load the USB boot loader on a BlueSCSI.
 
-To use, click on the green Code button above, and "Download Zip"
 
 It's current form is a set of scripts to help you update. We hope to make this entirly self contained and more fool proof in future updates.
 
 Please report issues, bugs, fixes here to make it better!
 
-## Do I have a compatible BlueSCSI?
+# Usage 
+
+## Step 0: Do you have a compatible BlueSCSI?
 
 ### Does your BlueSCSI have a USB Bootloader installed?
 
@@ -16,11 +17,27 @@ Please report issues, bugs, fixes here to make it better!
 * The LED flashes quickly at startup.
 * The LOG.txt VERSION ends in `-USB`
 
-If yours does you can flash updates via Option #1.
+#### Yes to any above?
 
-If your BlueSCSI does not have a USB bootloader you can install it with an STLink-V2 following option #2.
+Great! You can flash updates via **Option #1**.
 
-# Usage
+#### No?
+
+If your BlueSCSI does **not** have a USB bootloader you can install it with with this script with an STLink via Option #2
+
+**NOTE:** It is not trivial to setup STLink and flash the bootloader for the first time as the tooling is inteded for developrs. We try to make it as easy as possible but you may run into issues. Please read everything carefully if you choose this route. 
+
+#### Can someone do it for me?
+
+Yes! If you purchased a BlueSCSI before the USB bootloader was installed from an authorized seller we will upgrade it for the cost of shipping.
+
+## Step 1: Download this github repo as a zip
+
+Click on the green **Code** button above, and **"Download Zip"**
+
+Extract it.
+
+## Step 2: 
 
 ## Mac
 
@@ -32,11 +49,15 @@ Double click `flash-mac.command`
 
 Install the Maple Drivers in `utils/maple-usb-drivers-win.7z` - run `install_drivers.bat`
 
-**NOTE**: You will likely need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to `libusb-win32` if you see the error `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
-
 Double click `flash-win.bat`
 
+**NOTE**: If you see  `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)` you may need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to `libusb-win32`.
+
 ## FAQ
+
+### Q: I'm getting a DFU error and I've tried everything!
+
+A: Make sure your USB cable is not a "Charge Only" cable - data needs to be passed to the BlueSCSI to flash! (You'd be surprsied how many of these cables are out there)
 
 ### Q: Getting `Error sending completion packet (LIBUSB_ERROR_IO)`
 
@@ -50,7 +71,7 @@ Follow option #2 to install the USB bootloader and then the BlueSCSI firmware.
 
 ### Q: Getting `Cannot open DFU device 1eaf:0003 found on devnum 9 (LIBUSB_ERROR_NOT_SUPPORTED)`
 
-A: You will need to tell windows to use the correct driver by using Zadig and switching the Maple device to libusb. 
+A: You may need to tell windows to use the correct driver by using [Zadig](https://zadig.akeo.ie/) and switching the Maple device to `libusb-win32`.
 
 # Utilites Used
 
