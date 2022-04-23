@@ -1,7 +1,7 @@
 #!/bin/bash
 cd "$(dirname "$0")"
 BIN_FILE=${1:-BlueSCSI-v1.1-20220404-USB.bin}
-./find-commands.sh
+./find-commands.sh || exit $?
 echo
 echo "Flashing $BIN_FILE via USB"
 echo
