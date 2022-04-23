@@ -41,11 +41,15 @@ Extract it.
 
 ## Mac
 
+Tested on macOS 12.0 Monterey.
+
 Currently homebrew (https://brew.sh) is required due to having the utilities needed notarized. In the future we hope to remove this depencacy. 
 
 Double click `flash-mac.command`
 
 ## Win
+
+Tested on Windows 10.
 
 Install the Maple Drivers in `utils/maple-usb-drivers-win.7z` - run `install_drivers.bat`
 
