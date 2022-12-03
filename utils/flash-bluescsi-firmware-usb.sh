@@ -1,6 +1,6 @@
 #!/bin/bash
 cd "$(dirname "$0")"
-BIN_FILE=${1:-BlueSCSI-v1.1-20220917-STM32F1-USB.bin}
+BIN_FILE=${1:-BlueSCSI-v1.1-20221203-STM32F1-USB.bin}
 ./find-commands.sh || exit $?
 echo
 echo "Flashing $BIN_FILE via USB"
