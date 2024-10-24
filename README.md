@@ -1,6 +1,6 @@
 # BlueSCSI Updater
 
-These scripts served their puropose but we now reccomend [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to easily update via USB.
+These scripts served their purpose, but we now recommend [QMK Toolbox](https://github.com/qmk/qmk_toolbox) to easily update via USB.
 
 
 ## Old README.md

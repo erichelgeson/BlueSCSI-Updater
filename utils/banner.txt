@@ -7,7 +7,7 @@
  |____/|_|\__,_|\___|_____/ \_____|_____/|_____|
 
      Welcome to the BlueSCSI Firmware BBS!
-          Flasher Version 2023-07-08
+          Flasher Version 2023-11-16
 
 Choose an option:
 
